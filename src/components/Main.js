@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import requests from "./Requests";
+import NavBar from "./Navbar/Navbar";
 
 const Main = () => {
   const [movies, setMovies] = useState([]);
@@ -17,9 +18,9 @@ const Main = () => {
   return (
     <div className="titleMovies">
       <div>
-        <h1>Play Now</h1>
+        <NavBar />
         <img
-          className="titleMovie"
+          className="titleMovieS"
           src={`https://image.tmdb.org/t/p/original${movie?.backdrop_path}`}
         ></img>
       </div>
