@@ -13,13 +13,24 @@
   .title {
     color: red;
     padding: 8px;
+    margin: 0;
   }
   .buttonRow {
     display: flex;
     justify-content: space-between;
     border-color: green;
+    align-items: center;
   }
   .navBarContainer {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+  }
+  .navBlack {
     background-color: black;
+    transition: ease-in-out 800ms;
   }
   
